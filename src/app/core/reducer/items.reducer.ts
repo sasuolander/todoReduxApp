@@ -16,9 +16,7 @@ export const itemsReducer = createReducer(
   initialState,
   on(addItem, (state, action) => ({
     ...state,
-    items: {
-      ...state.items,
-      array: [...state.items, action.item]
+    items:[...state.items, action.item]
     }
-  })),
+  )),
 );

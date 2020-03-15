@@ -9,12 +9,14 @@ import { ItemsComponent } from "./items/items.component";
 import { EditItemComponent } from "./editItem/editItem.component";
 import { environment } from "src/environments/environment";
 import { reducers } from './core/mainReducer';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent, ItemsComponent, EditItemComponent],
   imports: [
     NgbModule,
     BrowserModule,
+    ReactiveFormsModule,
     StoreModule.forRoot(reducers),
     StoreDevtoolsModule.instrument({
       maxAge: 25,

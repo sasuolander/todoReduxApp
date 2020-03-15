@@ -6,13 +6,13 @@ import { Iitem } from "../../appInterface/itemInterface";
 
 export const addItem = createAction(
   actionEdit.ADD_ITEM,
-  props<{ item: Iitem }>()
+  (item:Iitem)=>({item})
 );
 export const editItem = createAction(
   actionEdit.REMOVE_ITEM,
-  props<{ item: Iitem }>()
+  (item:Iitem)=>({item})
 );
 export const removeItem = createAction(
   actionEdit.REMOVE_ITEM,
-  props<{ item: Iitem }>()
+  (item:Iitem)=>({item})
 );
