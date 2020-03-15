@@ -1,6 +1,3 @@
-<div>
-  <app-item></app-item>
-
 
   <table class="table table-striped">
     <thead>
@@ -12,8 +9,11 @@
       </tr>
     </thead>
     <tbody>
-        <app-item></app-item>
-
+    <tr *ngFor="let item of items">
+      <th scope="row">1</th>
+      <td>{{item.taskId}}</td>
+      <td>{{item.task}}</td>
+    </tr>
     </tbody>
   </table>
-</div>
+

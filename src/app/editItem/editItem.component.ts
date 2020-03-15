@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-editItem',
-  templateUrl: './editItem.component.html',
-  styleUrls: ['./editItem.component.css']
+  selector: "app-edit-item",
+  templateUrl: "./editItem.component.html",
+  styleUrls: ["./editItem.component.css"]
 })
 export class EditItemComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
