@@ -3,7 +3,10 @@ export interface Iitem {
   task: string;
 }
 
+export interface IitemInput {
+  task: string;
+}
 export class ItemFormClass implements Iitem {
-  taskId = 0;
+  taskId: number;
   task = "";
 }

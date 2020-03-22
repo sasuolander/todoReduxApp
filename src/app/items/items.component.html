@@ -13,6 +13,7 @@
       <th scope="row">1</th>
       <td>{{item.taskId}}</td>
       <td>{{item.task}}</td>
+      <td><button value="{{item.taskId}}" (click)="testFunction($event)">delete</button></td>
     </tr>
     </tbody>
   </table>

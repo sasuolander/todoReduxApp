@@ -4,6 +4,7 @@ import {IAppState } from "../core/storeInterface";
 import { Iitem } from '../appInterface/itemInterface';
 import { Observable } from 'rxjs';
 import { NgbPaginationNext } from '@ng-bootstrap/ng-bootstrap';
+import { removeItem } from '../core/action/editAction';
 
 @Component({
   selector: "app-items",
@@ -18,5 +19,12 @@ export class ItemsComponent implements OnInit {
    this.store.subscribe(state => {
      this.items = state.taskStore.items;
    });
+  }
+
+  testFunction($event){
+    const id =$event.target.value;
+    console.log($event.target.value);
+    this.store.dispatch(removeItem(id));
+    console.log("test");
   }
 }

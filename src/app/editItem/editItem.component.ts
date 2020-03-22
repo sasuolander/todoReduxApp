@@ -17,7 +17,7 @@ export class EditItemComponent implements OnInit {
     private formBuilder: FormBuilder,
     private store: Store<IAppState>
   ) {
-    this.itemForm = this.createFormGroup(formBuilder);
+    this.itemForm = this.createFormGroup(this.formBuilder);
   }
 
   createFormGroup(formBuilder: FormBuilder) {
