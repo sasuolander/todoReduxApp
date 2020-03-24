@@ -10,10 +10,13 @@ import { EditItemComponent } from "./editItem/editItem.component";
 import { environment } from "src/environments/environment";
 import { reducers } from './core/mainReducer';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
+import { TestRouteComponentComponent } from './testRouteComponent/testRouteComponent.component';
 
 @NgModule({
-  declarations: [AppComponent, ItemsComponent, EditItemComponent],
+  declarations: [AppComponent, ItemsComponent, EditItemComponent,TestRouteComponentComponent],
   imports: [
+    AppRoutingModule,
     NgbModule,
     BrowserModule,
     ReactiveFormsModule,
